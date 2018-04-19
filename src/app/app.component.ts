@@ -26,4 +26,8 @@ export class AppComponent {
       new Article('Code mentor', 'https://www.codementor.io', 5),
     ];
   }
+
+  sortArticles(): Array<Article> {
+    return this.articles.sort((a: Article, b: Article) => b.votes - a.votes);
+  }
 }
