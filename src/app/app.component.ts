@@ -12,7 +12,10 @@ export class AppComponent {
   articles: Array<Article>;
 
   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
-    console.log(`Adding article title: ${title.value} and link: ${link.value}`);
+    let article: Article = new Article(title.value, link.value);
+    this.articles.push(article);
+    title.value = '';
+    link.value = '';
     return false;
   }
 
