@@ -1,6 +1,6 @@
 # Reddit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+This project is a Reddit clone.
 
 ## Development server
 
@@ -12,7 +12,24 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag
+for a production build.
+
+## Deployment
+
+Using `now-cli`
+
+Installing `now`:
+```
+$ npm install -g now
+```
+To deploy a site with `now` is very easy:
+```
+$ cd dist # change into the dist folder
+$ now
+```
+The now command should ask you a couple of questions (such as your email address) and you’ll need
+to check your email and click the link inside.
 
 ## Running unit tests
 
