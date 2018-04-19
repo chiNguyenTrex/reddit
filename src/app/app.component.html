@@ -1,7 +1,17 @@
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-<app-hello-world></app-hello-world>
-<app-user-list></app-user-list>
+<form class="ui large form segment">
+  <h3 class="ui header">Add a Link</h3>
+
+  <div class="field">
+    <label for="title">Title:</label>
+    <input name="title">
+  </div>
+
+  <div class="field">
+    <label for="link">Link:</label>
+    <input name="link">
+  </div>
+
+  <button (click)="addArticle()" class="ui positive right floated button">
+    Submit Link
+  </button>
+</form>
